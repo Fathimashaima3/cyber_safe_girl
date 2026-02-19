@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+langchain-groq
+langchain-huggingface
+langchain-community
+faiss-cpu
+sentence-transformers
+pydantic
+requests
