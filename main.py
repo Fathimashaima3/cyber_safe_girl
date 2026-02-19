@@ -38,7 +38,12 @@ documents = [Document(page_content=entry["text"]) for entry in data if "text" in
 # Smaller embedding model (Render safe)
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 
-vectorstore = FAISS.from_documents(documents, embeddings)
+vectorstore = FAISS.load_local(
+    "faiss_index",
+    embeddings,
+    allow_dangerous_deserialization=True
+)
+
 
 llm = ChatGroq(model="llama-3.1-8b-instant", temperature=0.5)
 
