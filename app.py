@@ -23,7 +23,8 @@ if prompt := st.chat_input("Ask about cyber security..."):
     try:
         # UPDATED: Sending "message" to match your Backend's ChatInput class
         payload = {"message": prompt}
-        response = requests.post("http://127.0.0.1:8000/chat", json=payload)
+        response = requests.post("https://YOUR-RENDER-URL.onrender.com/chat", json=payload)
+
         
         if response.status_code == 200:
             # UPDATED: Looking for "reply" to match your backend's return statement

@@ -1,9 +1,14 @@
 fastapi
 uvicorn
+langchain
+langchain-core
+langchain-community
 langchain-groq
 langchain-huggingface
-langchain-community
 faiss-cpu
 sentence-transformers
 pydantic
 requests
+streamlit
+torch
+transformers
