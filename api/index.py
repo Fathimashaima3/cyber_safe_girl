@@ -17,7 +17,7 @@ llm = ChatGroq(model="llama-3.1-8b-instant", temperature=0.5)
 embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
 
 # 2. Load Knowledge Base
-with open("cyber_security.json", "r", encoding="utf-8") as f:
+with open(json_path, "r", encoding="utf-8") as f:
     data = json.load(f)
 documents = [Document(page_content=entry["text"]) for entry in data]
 vectorstore = DocArrayInMemorySearch.from_documents(documents, embeddings)
