@@ -5,5 +5,5 @@ langchain-groq
 langchain-google-genai
 langchain-community
 langchain-core
-pydantic<2.0.0
+pydantic
 docarray
