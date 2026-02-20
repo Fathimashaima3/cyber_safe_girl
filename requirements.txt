@@ -7,7 +7,7 @@ langchain-community
 langchain-core
 langchain-text-splitters
 langchain-groq
-
+streamlit
 faiss-cpu
 sentence-transformers
 
