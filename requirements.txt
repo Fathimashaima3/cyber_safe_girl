@@ -1,18 +1,9 @@
 fastapi
 uvicorn
-python-dotenv
-
 langchain
+langchain-groq
+langchain-google-genai
 langchain-community
 langchain-core
-langchain-text-splitters
-langchain-groq
-streamlit
-faiss-cpu
-sentence-transformers
-
-groq
-pypdf
-
-torch==2.10.0+cpu
---extra-index-url https://download.pytorch.org/whl/cpu
+pydantic<2.0.0
+docarray
